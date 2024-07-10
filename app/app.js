@@ -12,6 +12,7 @@ const home=require("./src/routes/home");
 // 앱 세팅 
 app.set("views", "./src/views"); // 미리 views 설정
 app.set("view engine","ejs");
+app.use(express.static(`${__dirname}/src/public`));
 
 
 
